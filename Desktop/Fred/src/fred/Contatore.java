@@ -3,11 +3,11 @@ package fred;
 public class Contatore {
 	 static int count = 0;
 
-	    public void increment() {
+	    public synchronized void increment() {
 	        count++;
 	    }
 
-	    public void decrement() {
+	    public synchronized void decrement() {
 	        count--;
 	    }
 	    void printFinalCounterValue() {
